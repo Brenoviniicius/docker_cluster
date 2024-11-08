@@ -1,24 +1,32 @@
 variable "aws_region" {
-  type = string
+  type        = string
   description = ""
-  default = "us-east-2"
+  default     = "us-east-2"
 }
 
 variable "aws_profile" {
-  type = string
+  type        = string
   description = ""
-  default = "default"
+  default     = "default"
 }
 
 variable "instance_ami" {
-  type = string
+  type        = string
   description = ""
-  default = "ami-0ea3c35c5c3284d82"
+  default     = "ami-0ea3c35c5c3284d82"
 
+}
+
+variable "instance_number" {
+  type        = number
+  description = ""
+  default     = 3
 }
 
 variable "instance_type" {
-  type = string
+  type        = string
   description = ""
-  default = "t2.micro"
+  default     = "t2.micro"
 }
+
+
