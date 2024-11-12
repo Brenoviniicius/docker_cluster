@@ -1,15 +1,18 @@
+#Variavel da região
 variable "aws_region" {
   type        = string
   description = ""
   default     = "us-east-2"
 }
 
+#Variavel do profile do awscli
 variable "aws_profile" {
   type        = string
   description = ""
   default     = "default"
 }
 
+#Definindo o id da instância que será usada
 variable "instance_ami" {
   type        = string
   description = ""
@@ -17,19 +20,21 @@ variable "instance_ami" {
 
 }
 
+#Definindo a quantidade de instancias que será criada
 variable "instance_number" {
   type        = number
   description = ""
   default     = 3
 }
 
+#Definindo o timpo de instancia que será criada
 variable "instance_type" {
   type        = string
   description = ""
   default     = "t2.micro"
 }
 
-
+#Definindo a chave SSH
 variable "instance_public_ssh" {
   type        = string
   description = ""
